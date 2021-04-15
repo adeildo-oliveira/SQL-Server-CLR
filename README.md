@@ -14,7 +14,7 @@ BEGIN
 	EXEC('DROP ASSEMBLY FunctionCliente'); 
 END 
 
-CREATE ASSEMBLY FunctionCliente FROM 'D:\PROJETOS\Repository\SqlServerCLR\FunctionCliente\FunctionCliente\bin\Debug\FunctionCliente.dll' with PERMISSION_SET=SAFE;
+CREATE ASSEMBLY FunctionCliente FROM 'C:\temp\FunctionCliente.dll' with PERMISSION_SET=SAFE;
 
 CREATE FUNCTION dbo.ExtrairNumeroFunction(@parametro nvarchar(max))
 	RETURNS nvarchar(max) WITH EXECUTE AS CALLER
